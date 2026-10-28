@@ -54,7 +54,7 @@ export type UpdateVisitRequest = components['schemas']['UpdateVisitRequest'];
 // Error Types
 // =============================================================================
 export type ErrorResponse = components['schemas']['ErrorResponseResource'];
-export type ValidationErrorResponse = components['schemas']['ValidationErrorResponseResource'];
+export type ValidationErrorResponse = components['schemas']['MethodArgumentNotValidResponseResource'];
 export type ValidationError = components['schemas']['ValidationErrorResource'];
 export type ApiErrorResponse = components['schemas']['ApiErrorResponseResource'];
 export type RateLimitErrorResponse = components['schemas']['RateLimitErrorResponseResource'];

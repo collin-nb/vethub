@@ -52,7 +52,9 @@ class PetGlobalControllerTest extends IntegrationTest {
             .andExpect(jsonPath("$", hasSize(1)))
             .andExpect(jsonPath("$[0].id", is(equalTo(pet.getId()))))
             .andExpect(jsonPath("$[0].name", is(equalTo(PET_NAME))))
-            .andExpect(jsonPath("$[0].ownerId", is(equalTo(owner.getId()))));
+            .andExpect(jsonPath("$[0].ownerId", is(equalTo(owner.getId()))))
+            .andExpect(jsonPath("$[0].ownerFirstName", is(equalTo(owner.getFirstName()))))
+            .andExpect(jsonPath("$[0].ownerLastName", is(equalTo(owner.getLastName()))));
     }
 
     @Test
